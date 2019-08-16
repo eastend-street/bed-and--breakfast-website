@@ -1,36 +1,89 @@
 body {
-    color: #fff;
-    margin: 0px;
-    background: url(../images/back.jpg) center center fixed no-repeat;
+  color: #fff;
+  margin: 0px;
+  background: url(../images/back.jpg) center center fixed no-repeat;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .container h1 {
-    visibility: hidden;
+  visibility: hidden;
 }
 .logo {
-    margin-top: -200px;
+  opacity: 0;
+  animation: logo-keyframes 1.5s ease-in-out 0.5s 1 forwards;
 }
 
 .title {
-    opacity: 0.7;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: normal;
-    margin-top: 70px;
-    letter-spacing: 20px;
+  opacity: 0;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 50px;
+  letter-spacing: 20px;
+  animation: title-keyframes 0.5s ease-out 2.0s 1 forwards;
+}
+
+.menu {
 }
 
 .menu ul {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    opacity: 0.8;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
 }
+
 .menu ul li {
+  opacity: 0;
+  width: 180px;
+  text-align: center;
+  animation: menu-keyframes 0.5s ease-out 2.0s 1 forwards;
+}
+
+@keyframes logo-keyframes {
+  0% {
+    margin-top: -400px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -100px;
+    opacity: 0.5;
+  }
+
+  100% {
+    margin-top: -230px;
+    opacity: 1;
+  }
+}
+
+@keyframes title-keyframes {
+  0% {
+    opacity: 0;
+    font-size: 0.1em;
+  }
+  50% {
+    opacity: 0.4;
+    font-size: 0.7em;
+  }
+  100% {
+    opacity: 0.8;
+    font-size: 1.5em;
+  }
+}
+
+@keyframes menu-keyframes {
+  0% {
+    opacity: 0;
+    width: 200px;
+  }
+  50% {
+    opacity: 0.4;
+    width: 190px;
+  }
+  100% {
+    opacity: 0.8;
     width: 180px;
-    text-align: center;
+  }
 }
