@@ -13,7 +13,7 @@ body {
 }
 .logo {
   opacity: 0;
-  animation: logo-keyframes 1.5s ease-in-out 0.5s 1 forwards;
+  animation: logo-keyframes 1.5s ease-in-out 0.5s 1 backwards;
 }
 
 .title {
@@ -22,10 +22,7 @@ body {
   font-weight: normal;
   margin-top: 50px;
   letter-spacing: 20px;
-  animation: title-keyframes 0.5s ease-out 2.0s 1 forwards;
-}
-
-.menu {
+  animation: title-keyframes 0.5s ease-out 2s 1 forwards;
 }
 
 .menu ul {
@@ -39,7 +36,7 @@ body {
   opacity: 0;
   width: 180px;
   text-align: center;
-  animation: menu-keyframes 0.5s ease-out 2.0s 1 forwards;
+  animation: menu-keyframes 0.5s ease-out 2s 1 forwards;
 }
 
 @keyframes logo-keyframes {
